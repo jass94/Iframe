@@ -1,0 +1,44 @@
+ <div class = "outer-container">
+    
+ 
+<div class="auth-block login-auth-block ">
+  <h1>
+      <strong>Login Here</strong>
+  </h1>
+  <form align = "center" [formGroup]="form" (ngSubmit)="onSubmit(form.value,$event)" >
+
+          <mat-form-field class="formFullWidth">
+                <mat-label>Email</mat-label>
+                <img matPrefix class="preIconImage"  height="22px" src="./assets/images/email-icon.svg" alt="image here ">
+              <input matInput formControlName="email" type="email" placeholder="Email" >
+              <mat-error  *ngIf="form.controls['email'].errors?.invalid && !form.controls['email'].pristine">
+                   Incorrect email
+              </mat-error>
+          </mat-form-field>
+          <mat-form-field class="formFullWidth">
+                <mat-label>Password</mat-label>
+                <img matPrefix class="preIconImage" height="22px"  src="./assets/images/password-lock-icon.svg" alt="image here ">
+              
+                <img matSuffix class="preIconImage" (click)='passwordVar == "password" ? passwordVar="text" : passwordVar = "password" '  height="22px" src="./assets/images/password-eye-icon.svg" alt="image here ">
+
+              <input matInput [type]="passwordVar" placeholder="Password"  formControlName="password">
+
+              
+              <mat-error   *ngIf="form.controls['password'].errors?.strongPass && !form.controls['password'].pristine">
+               {{   form.controls['password'].errors?.strongPass }}
+             </mat-error>
+           
+          </mat-form-field>
+         
+
+      <div  style='margin-top: 24px;'>
+         <button type="submit" class="formFullWidth " mat-raised-button color="primary" [disabled]="!form.valid"   [ngClass]='{"disabledButton": !form.valid}'>Login</button>
+      </div>
+  </form>
+</div>
+
+</div>
+
+
+
+

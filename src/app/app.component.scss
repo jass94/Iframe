@@ -1,0 +1,11 @@
+#spinnerOuterDiv{
+height:100vh;
+position:absolute;
+display:  flex ;
+align-items: center;
+justify-content: center;
+width:100%;
+}
+.mat-progress-spinner{
+    z-index: 10;
+}
