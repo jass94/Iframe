@@ -10,10 +10,14 @@ import { DashboardModule } from './components/dashboard/dashboard.module';
 import { AuthGuardService } from './utilities/guards/auth-guard.service';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoginGuardService } from './utilities/guards/login-guard.service';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+// import { ViewSiteComponent } from './components/dashboard/components/view-site/view-site.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent,
+    // ViewSiteComponent
   ],
   imports: [
     BrowserModule,

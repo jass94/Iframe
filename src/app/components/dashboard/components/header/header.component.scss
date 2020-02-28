@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+  background-color: Black;
+  opacity: 0.9;
+}
+
+.flex-container > div {
+  padding: 10px;
+  font-size: 24px;
+  color:#fff;
+  align-self: center;
+  width: 100px;
+}
+.flexGrow2{
+  flex-grow: 2;
+  text-align: center;
+  input{
+    width:60%;
+    height: 44px;
+    border-radius: 26px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+  }
+}
+.logout{
+  cursor: pointer;
+}

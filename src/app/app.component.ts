@@ -20,8 +20,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit(){
  
 firebase.initializeApp({
-  apiKey: "AIzaSyBFqpcirqWrGJS4IE1kFePZgBDBcV04m5U",
-  authDomain: "assignmenttask1-eff9b.firebaseapp.com",
+  apiKey: "AIzaSyCfgZdU_VCcUaRTY8AXvTnK8X4LSAA1YvI",
+  authDomain: "twoiframe.firebaseapp.com",
 })
 
 

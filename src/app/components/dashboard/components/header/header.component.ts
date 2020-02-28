@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DashBoardService } from '../../dashboard.service'
 
 
 
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent{
 
-  constructor(private router:Router) {
+  constructor(private router:Router, private dashBoardService: DashBoardService) {
 
 }
 
@@ -20,5 +21,11 @@ logoutClicked(){
     this.router.navigate(['/onboarding']);
 }
  
+
+onUrlChange(e,type){
+  this.dashBoardService.setUrl(e.target.value,type);
+}
+
+
 
 }

@@ -1,0 +1,15 @@
+
+
+.viewSiteContainer {
+    display: flex;
+    margin: 10px;
+    font-size: 24px;
+    color:#000;
+    align-self: center;
+
+    app-view-site{
+        flex-grow: 2;
+    }
+  }
+
+ 
